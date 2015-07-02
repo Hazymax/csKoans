@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using FinalTest.Linq;
 using NFluent;
 using NUnit.Framework;
 
@@ -39,32 +40,32 @@ namespace FinalTest.Tests
             };
         }
 
-        //[Test]
-        //public void RécupérerLesNombresPairs()
-        //{
-        //    var nombres = new Nombres(keyValuePairs);
-        //    var nombresPairs = nombres.NombresPairs; // getter seulement qui retourne un IEnumerable<int> en utilisant Linq (i.e sans utiliser de boucles) -> Where + Select
+        [Test]
+        public void RécupérerLesNombresPairs()
+        {
+            var nombres = new Nombres(keyValuePairs);
+            var nombresPairs = nombres.NombresPairs; // getter seulement qui retourne un IEnumerable<int> en utilisant Linq (i.e sans utiliser de boucles) -> Where + Select
 
-        //    Check.That(nombresPairs).ContainsExactly(4, 2, 8, 6);
-        //}
+            Check.That(nombresPairs).ContainsExactly(4, 2, 8, 6);
+        }
 
-        //[Test]
-        //public void RécupérerLesNombresPairsBis()
-        //{
-        //    var nombres = new Nombres(otherKeyValuePairs);
-        //    var nombresPairs = nombres.NombresPairs; // même propriété
+        [Test]
+        public void RécupérerLesNombresPairsBis()
+        {
+            var nombres = new Nombres(otherKeyValuePairs);
+            var nombresPairs = nombres.NombresPairs; // même propriété
 
-        //    Check.That(nombresPairs).ContainsExactly(10, 74, 28, 66, 92);
-        //}
+            Check.That(nombresPairs).ContainsExactly(10, 74, 28, 66, 92);
+        }
 
-        //[Test]
-        //public void RécupérerUneChaîneContenantLesNombresImpairsAuFormatTextuel()
-        //{
-        //    var nombres = new Nombres(keyValuePairs);
-        //    var texteNombresImpairs = nombres.TexteNombresImpairs; // retourne une string en utilisant Linq (i.e sans utiliser de boucles) -> Aggregate + OrderBy
+        [Test]
+        public void RécupérerUneChaîneContenantLesNombresImpairsAuFormatTextuel()
+        {
+            var nombres = new Nombres(keyValuePairs);
+            var texteNombresImpairs = nombres.TexteNombresImpairs; // retourne une string en utilisant Linq (i.e sans utiliser de boucles) -> Aggregate + OrderBy
 
-        //    Check.That(texteNombresImpairs).IsEqualTo("un, trois, cinq, sept, neuf");
-        //}
+            Check.That(texteNombresImpairs).IsEqualTo("un, trois, cinq, sept, neuf");
+        }
 
         //[Test]
         //public void RécupérerUneChaîneContenantLesNombresImpairsAuFormatTextuelBis()
