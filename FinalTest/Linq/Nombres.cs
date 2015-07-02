@@ -25,9 +25,30 @@ namespace FinalTest.Linq
             get
             {
                 return (from element in liste
-                    where element.Value%2 != 0
-                    orderby element.Value
-                    select element.Key).Aggregate((s, next) => s + "," + next);
+                        where element.Value % 2 != 0
+                        orderby element.Value
+                        select element.Key).Aggregate((s, next) => s + ", " + next);
+            }
+        }
+
+        public string PremierNombreDontLeTexteContientPlusDe5Caractères
+        {
+            get
+            {
+                return (from element in liste
+                        where element.Key.Length > 5
+                        select element.Key).FirstOrDefault();
+            }
+        }
+
+        public IEnumerable<int> QuatreNombresSupérieursSuivant3
+        {
+            get
+            {
+                return (from element in liste
+                        where element.Value > 3
+                        orderby element.Value
+                        select element.Value).Take(4);
             }
         }
 
