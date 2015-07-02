@@ -43,11 +43,24 @@
     <Compile Include="BasesCSharp\IOperation.cs" />
     <Compile Include="BasesCSharp\Multiplication.cs" />
     <Compile Include="Linq\Nombres.cs" />
+    <Compile Include="Pattern\BalanceNégativeDétectée.cs" />
+    <Compile Include="Pattern\CompteBancaire.cs" />
+    <Compile Include="Pattern\CompteCréé.cs" />
+    <Compile Include="Pattern\DépotRéalisé.cs" />
+    <Compile Include="Pattern\FakeRepository.cs" />
+    <Compile Include="Pattern\IEvenementMetier.cs" />
+    <Compile Include="Pattern\ISynthèseCompteBancaireRepository.cs" />
+    <Compile Include="Pattern\Montant.cs" />
+    <Compile Include="Pattern\RetraitNonAutorisé.cs" />
+    <Compile Include="Pattern\RetraitRéalisé.cs" />
+    <Compile Include="Pattern\SynthèseCompteBancaire.cs" />
+    <Compile Include="Pattern\SynthèseCompteBancaireProjection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BasesCSharp\Somme.cs" />
     <Compile Include="BasesCSharp\TypeReference.cs" />
     <Compile Include="BasesCSharp\TypeValeur.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

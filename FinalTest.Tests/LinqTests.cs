@@ -3,7 +3,7 @@ using FinalTest.Linq;
 using NFluent;
 using NUnit.Framework;
 
-namespace FinalTest.Tests
+namespace FinalTest.Pattern
 {
     [TestFixture]
     public class LinqTests

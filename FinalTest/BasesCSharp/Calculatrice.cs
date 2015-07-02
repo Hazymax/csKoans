@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace FinalTest.BasesCSharp
 {
     public class Calculatrice
-
     {
 
         public IOperation[] Ioperation { get; set; }
@@ -19,7 +18,7 @@ namespace FinalTest.BasesCSharp
 
         public int Calculer(String str)
         {
-            if (Ioperation == null){return 0;}
+            if (Ioperation == null) { return 0; }
 
             int result = 0;
 
@@ -27,7 +26,7 @@ namespace FinalTest.BasesCSharp
             {
                 if ((ope.PeutCalculer(str)) == true)
                 {
-                    result =  ope.Calculer(str);
+                    result = ope.Calculer(str);
                 }
             }
 

@@ -11,7 +11,8 @@ namespace FinalTest
 
         public int Valeur { get; set; }
 
-        public TypeValeur(int i) : this()
+        public TypeValeur(int i)
+            : this()
         {
             Valeur = i;
         }

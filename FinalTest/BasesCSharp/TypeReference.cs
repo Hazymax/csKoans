@@ -18,8 +18,8 @@ namespace FinalTest
 
         public override bool Equals(object obj)
         {
-            if (obj == null){return false;}
-            TypeReference tr = (TypeReference) obj;
+            if (obj == null) { return false; }
+            TypeReference tr = (TypeReference)obj;
             return tr.Valeur.Equals(Valeur);
 
         }

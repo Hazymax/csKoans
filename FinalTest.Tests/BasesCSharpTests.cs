@@ -3,7 +3,7 @@ using FinalTest.BasesCSharp;
 using NFluent;
 using NUnit.Framework;
 
-namespace FinalTest.Tests
+namespace FinalTest.Pattern
 {
     [TestFixture]
     public class BasesCSharpTests
